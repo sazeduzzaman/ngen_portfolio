@@ -34,18 +34,20 @@
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#Id2"
+            aria-controls="Id2"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="fw-normal">
+              <i class="fa-solid fa-bars text-black"></i>
+            </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -83,123 +85,110 @@
           </div>
         </div>
       </nav>
-    </header>
-    <div id="smooth-wrapper">
-      <div id="smooth-content">
-        <main>
-          <!-- Banner Section Start -->
-          <section class="banner__slider">
-            <div class="slider stick-dots">
-              <div class="slide">
-                <div class="slide__img">
-                  <img
-                    src=""
-                    alt=""
-                    data-lazy="./assets/images/banner-2.jpg"
-                    class="full-image animated"
-                    data-animation-in="zoomOutImage"
-                  />
-                </div>
-                <div class="slide__content slide__content__left">
-                  <div class="slide__content--headings text-left">
-                    <p
-                      class="animated top-title"
-                      data-animation-in="fadeInLeft"
-                      data-delay-in="0.2"
-                    >
-                      We create premium designs and technology
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-backdrop="static"
+        tabindex="-1"
+        id="Id2"
+        aria-labelledby="staticBackdropLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="footer-content pt-0">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+                <div class="logo-widget footer-widget">
+                  <figure class="logo-box">
+                    <a class="navbar-brand" href="/">
+                      <img
+                        class="img-fluid site-logo"
+                        src="./assets/images/logo-white.png"
+                        alt=""
+                      />
+                    </a>
+                  </figure>
+                  <div class="text">
+                    <p>
+                      At NGen IT, we specialize in delivering cutting-edge
+                      technology solutions that drive businesses forward..
                     </p>
-                    <h2 class="animated title" data-animation-in="fadeInLeft">
-                      Minimal Design
-                    </h2>
-                    <button
-                      class="btn-common-two animated mt-5"
-                      data-animation-in="fadeInUp"
-                    >
-                      Contact Us
-                    </button>
                   </div>
+                  <ul class="footer-social">
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="slide">
-                <div class="slide__img">
-                  <img
-                    src=""
-                    alt=""
-                    data-lazy="./assets/images/banner-1.jpg"
-                    class="full-image animated"
-                    data-animation-in="zoomInImage"
-                  />
-                </div>
-                <div class="slide__content">
-                  <div class="slide__content--headings text-center">
-                    <p
-                      class="animated top-title"
-                      data-animation-in="fadeInUp"
-                      data-delay-in="0.3"
-                    >
-                      Powerful theme for creatives designer
-                    </p>
-                    <h1 class="animated title" data-animation-in="fadeInUp">
-                      Digital Agency
-                    </h1>
-                    <button
-                      class="btn-common-two animated mt-5"
-                      data-animation-in="fadeInUp"
-                    >
-                      Contact Us
-                    </button>
-                  </div>
+              <div
+                class="col-lg-3 col-md-6 col-sm-12 offset-lg-2 footer-column"
+              >
+                <div class="service-widget footer-widget">
+                  <div class="footer-title">Services</div>
+                  <ul class="list">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Software Development</a></li>
+                    <li><a href="#">Graphics & UI/UX</a></li>
+                    <li><a href="#">Apps Development</a></li>
+                    <li><a href="#">Solution Selles</a></li>
+                  </ul>
                 </div>
               </div>
-              <div class="slide">
-                <div class="slide__img">
-                  <img
-                    src=""
-                    alt=""
-                    data-lazy="./assets/images/banner-3.jpg"
-                    class="full-image animated"
-                    data-animation-in="zoomInImage"
-                  />
-                </div>
-                <div class="slide__content slide__content__right">
-                  <div class="slide__content--headings text-end">
-                    <p
-                      class="animated top-title"
-                      data-animation-in="fadeInUp"
-                      data-delay-in="0.3"
-                    >
-                      Powerful theme for creatives designer
-                    </p>
-                    <h1 class="animated title" data-animation-in="fadeInUp">
-                      Digital Agency
-                    </h1>
-                    <button
-                      class="btn-common-two animated mt-5"
-                      data-animation-in="fadeInUp"
-                    >
-                      Contact Us
-                    </button>
+              <div class="col-lg-3 col-md-6 col-sm-12 footer-widget">
+                <div class="contact-widget footer-widget">
+                  <div class="footer-title">Contacts</div>
+                  <div class="text">
+                    <p>Tell us about your next project.</p>
+                    <p>+880 171 4243 446</p>
+                    <p>+1 917 720 3055</p>
+                    <p>sales@ngenitltd.com</p>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- SVG Circle for Navigation (Optional) -->
-            <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-              <symbol
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 44 44"
-                width="44px"
-                height="44px"
-                id="circle"
-                fill="none"
-                stroke="currentColor"
-              >
-                <circle r="20" cy="22" cx="22" id="test" />
-              </symbol>
-            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <!-- Contact Section Start -->
+          <section>
+            <div class="container-fluid px-0">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="contact-section">
+                    <img
+                      src="https://socialspike.in/wp-content/uploads/2023/07/About-Us-1.jpg"
+                      alt=""
+                    />
+                    <div class="text-overlay">
+                      <!-- <h3>Contact</h3> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
-          <!-- Banner Section End -->
+          <!-- Contact Section End -->
           <section class="about-section">
             <div class="container">
                 <div class="row">                

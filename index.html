@@ -33,18 +33,20 @@
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#Id2"
+            aria-controls="Id2"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="fw-normal">
+              <i class="fa-solid fa-bars text-black"></i>
+            </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -82,6 +84,87 @@
           </div>
         </div>
       </nav>
+      <div
+      class="offcanvas offcanvas-start"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="Id2"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="footer-content pt-0">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+              <div class="logo-widget footer-widget">
+                <figure class="logo-box">
+                  <a class="navbar-brand" href="/">
+                    <img
+                      class="img-fluid site-logo"
+                      src="./assets/images/logo-white.png"
+                      alt=""
+                    />
+                  </a>
+                </figure>
+                <div class="text">
+                  <p>
+                    At NGen IT, we specialize in delivering cutting-edge
+                    technology solutions that drive businesses forward..
+                  </p>
+                </div>
+                <ul class="footer-social">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-12 offset-lg-2 footer-column"
+            >
+              <div class="service-widget footer-widget">
+                <div class="footer-title">Services</div>
+                <ul class="list">
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">Software Development</a></li>
+                  <li><a href="#">Graphics & UI/UX</a></li>
+                  <li><a href="#">Apps Development</a></li>
+                  <li><a href="#">Solution Selles</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 footer-widget">
+              <div class="contact-widget footer-widget">
+                <div class="footer-title">Contacts</div>
+                <div class="text">
+                  <p>Tell us about your next project.</p>
+                  <p>+880 171 4243 446</p>
+                  <p>+1 917 720 3055</p>
+                  <p>sales@ngenitltd.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </header>
     <div id="smooth-wrapper">
       <div id="smooth-content">
@@ -100,7 +183,9 @@
                   />
                 </div>
                 <div class="slide__content slide__content__left">
-                  <div class="slide__content--headings text-left">
+                  <div
+                    class="slide__content--headings text-center text-lg-start"
+                  >
                     <p
                       class="animated top-title"
                       data-animation-in="fadeInLeft"
@@ -162,7 +247,7 @@
                   />
                 </div>
                 <div class="slide__content slide__content__right">
-                  <div class="slide__content--headings text-end">
+                  <div class="slide__content--headings text-center text-lg-end">
                     <p
                       class="animated top-title"
                       data-animation-in="fadeInUp"
@@ -238,19 +323,21 @@
                     </a>
                   </div>
                   <div class="col-lg-12">
-                    <div class="d-flex justify-content-center py-5">
-                      <p class="pe-5 text-uppercase agency_feature">
+                    <div
+                      class="d-flex justify-content-center py-5 home-feature"
+                    >
+                      <p class="pe-0 pe-lg-5 text-uppercase agency_feature">
                         <i class="fa-regular fa-copyright pe-2"></i> digital
                         branding
                       </p>
-                      <p class="pe-5 text-uppercase agency_feature">
+                      <p class="pe-0 pe-lg-5 text-uppercase agency_feature">
                         <i class="fa-solid fa-mug-hot pe-2"></i> brand strategy
                       </p>
-                      <p class="pe-5 text-uppercase agency_feature">
+                      <p class="pe-0 pe-lg-5 text-uppercase agency_feature">
                         <i class="fa-solid fa-bezier-curve pe-2"></i> Website
                         designing
                       </p>
-                      <p class="pe-5 text-uppercase agency_feature">
+                      <p class="pe-0 pe-lg-5 text-uppercase agency_feature">
                         <i class="fa-solid fa-cart-shopping pe-2"></i> Ecommerce
                         tool
                       </p>
@@ -262,7 +349,7 @@
           </section>
           <!-- A creative agency -->
           <section style="background-color: #2c3e50">
-            <div class="container-fluid pb-5">
+            <div class="container-fluid pb-0 pb-lg-5">
               <div class="marquee_container">
                 <div class="marquee left-to-right">
                   <div class="marquee_group">
@@ -296,7 +383,7 @@
           <div class="shape-container" id="section1">
             <!-- Feature Section Start -->
             <section>
-              <div class="container py-5">
+              <div class="container py-0 py-lg-5">
                 <div class="row align-items-center">
                   <div class="col-lg-6">
                     <div class="py-5">
@@ -316,17 +403,24 @@
                       <div class="row mt-4">
                         <div class="col-lg-6">
                           <div class="mb-3 shape_side_box">
-                            <a href="projectDetails.html" class="btn btn-white shadow-sm arrow-btns">
+                            <a
+                              href="projectDetails.html"
+                              class="btn btn-white shadow-sm arrow-btns"
+                            >
                               <i class="fa-solid fa-chevron-right pe-2"></i>
                             </a>
-                            <a href="projectDetails.html"
+                            <a
+                              href="projectDetails.html"
                               class="btn btn-white shadow-sm services-btn w-75 text-start"
                             >
                               Web Design
                             </a>
                           </div>
                           <div class="mb-3 shape_side_box">
-                            <a href="projectDetails.html" class="btn btn-white shadow-sm arrow-btns">
+                            <a
+                              href="projectDetails.html"
+                              class="btn btn-white shadow-sm arrow-btns"
+                            >
                               <i class="fa-solid fa-chevron-right pe-2"></i>
                             </a>
                             <a
@@ -336,30 +430,42 @@
                             </a>
                           </div>
                           <div class="mb-3 shape_side_box">
-                            <a href="projectDetails.html" class="btn btn-white shadow-sm arrow-btns">
+                            <a
+                              href="projectDetails.html"
+                              class="btn btn-white shadow-sm arrow-btns"
+                            >
                               <i class="fa-solid fa-chevron-right pe-2"></i>
                             </a>
-                            <a href="projectDetails.html"
+                            <a
+                              href="projectDetails.html"
                               class="btn btn-white shadow-sm services-btn w-75 text-start"
                             >
                               Web Design
                             </a>
                           </div>
                           <div class="mb-3 shape_side_box">
-                            <a href="projectDetails.html" class="btn btn-white shadow-sm arrow-btns">
+                            <a
+                              href="projectDetails.html"
+                              class="btn btn-white shadow-sm arrow-btns"
+                            >
                               <i class="fa-solid fa-chevron-right pe-2"></i>
                             </a>
-                            <a href="projectDetails.html"
+                            <a
+                              href="projectDetails.html"
                               class="btn btn-white shadow-sm services-btn w-75 text-start"
                             >
                               Web Design
                             </a>
                           </div>
                           <div class="mb-3 shape_side_box">
-                            <a href="projectDetails.html" class="btn btn-white shadow-sm arrow-btns">
+                            <a
+                              href="projectDetails.html"
+                              class="btn btn-white shadow-sm arrow-btns"
+                            >
                               <i class="fa-solid fa-chevron-right pe-2"></i>
                             </a>
-                            <a href="projectDetails.html"
+                            <a
+                              href="projectDetails.html"
                               class="btn btn-white shadow-sm services-btn w-75 text-start"
                             >
                               Web Design
@@ -368,27 +474,38 @@
                         </div>
                         <div class="col-lg-6">
                           <div class="mb-3 shape_side_box">
-                            <a href="projectDetails.html" class="btn btn-white shadow-sm arrow-btns">
+                            <a
+                              href="projectDetails.html"
+                              class="btn btn-white shadow-sm arrow-btns"
+                            >
                               <i class="fa-solid fa-chevron-right pe-2"></i>
                             </a>
-                            <a href="projectDetails.html"
+                            <a
+                              href="projectDetails.html"
                               class="btn btn-white shadow-sm services-btn w-75 text-start"
                             >
                               Web Design
                             </a>
                           </div>
                           <div class="mb-3 shape_side_box">
-                            <a href="projectDetails.html" class="btn btn-white shadow-sm arrow-btns">
+                            <a
+                              href="projectDetails.html"
+                              class="btn btn-white shadow-sm arrow-btns"
+                            >
                               <i class="fa-solid fa-chevron-right pe-2"></i>
                             </a>
-                            <a href="projectDetails.html"
+                            <a
+                              href="projectDetails.html"
                               class="btn btn-white shadow-sm services-btn w-75 text-start"
                             >
                               Web Design
                             </a>
                           </div>
                           <div class="mb-3 shape_side_box">
-                            <a href="projectDetails.html" class="btn btn-white shadow-sm arrow-btns">
+                            <a
+                              href="projectDetails.html"
+                              class="btn btn-white shadow-sm arrow-btns"
+                            >
                               <i class="fa-solid fa-chevron-right pe-2"></i>
                             </a>
                             <a
@@ -398,20 +515,28 @@
                             </a>
                           </div>
                           <div class="mb-3 shape_side_box">
-                            <a href="projectDetails.html" class="btn btn-white shadow-sm arrow-btns">
+                            <a
+                              href="projectDetails.html"
+                              class="btn btn-white shadow-sm arrow-btns"
+                            >
                               <i class="fa-solid fa-chevron-right pe-2"></i>
                             </a>
-                            <a href="projectDetails.html"
+                            <a
+                              href="projectDetails.html"
                               class="btn btn-white shadow-sm services-btn w-75 text-start"
                             >
                               Web Design
                             </a>
                           </div>
                           <div class="mb-3 shape_side_box">
-                            <a href="projectDetails.html" class="btn btn-white shadow-sm arrow-btns">
+                            <a
+                              href="projectDetails.html"
+                              class="btn btn-white shadow-sm arrow-btns"
+                            >
                               <i class="fa-solid fa-chevron-right pe-2"></i>
                             </a>
-                            <a href="projectDetails.html"
+                            <a
+                              href="projectDetails.html"
                               class="btn btn-white shadow-sm services-btn w-75 text-start"
                             >
                               Web Design
@@ -424,6 +549,7 @@
                   <div class="col-lg-6">
                     <div>
                       <img
+                        class="mobile-imgs"
                         src="./assets/images/webdevelopment.png"
                         alt="Development Services"
                       />
@@ -449,10 +575,10 @@
                   <div class="col-lg-6">
                     <div class="">
                       <div class="d-flex align-items-center">
-                        <h1>Graphics Services</h1>
+                        <h1 class="grp-title">Graphics Services</h1>
                         <span class="line ms-2"></span>
                       </div>
-                      <p class="pt-3">
+                      <p class="pt-3 grp-para">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Expedita, consequuntur assumenda iste fugiat aliquid
                         maxime natus, libero commodi veritatis vitae quidem
