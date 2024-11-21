@@ -213,18 +213,22 @@ ul {
   font-family: "Space Grotesk", sans-serif;
 }
 .slide__content--headings .sub-title {
-  font-size: 50px;
+  font-size: 30px;
   transition: 0.5s ease-in;
   font-weight: bold;
   font-family: "Space Grotesk", sans-serif;
   border-bottom: 3px solid #fff;
+}
+.p-badge{
+  background-color: #272b36;
+  color: white !important;
 }
 .slide__content--headings .sub-title:hover {
   transition: 0.5s ease-in;
   background-color: white;
   color: #001e57;
   text-align: center !important;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
   font-family: "Space Grotesk", sans-serif;
   border-bottom: 3px solid #fff;
@@ -487,7 +491,7 @@ ul {
 }
 .footer-content .logo-widget .footer-social li a:hover {
   color: #ffffff;
-  background: #ff5e14;
+  background: #2e3138;
 }
 .footer-content .logo-widget .logo-box {
   margin-bottom: 25px;
@@ -515,7 +519,7 @@ ul {
   color: #9ea0a9;
 }
 .footer-content .service-widget .list li a:hover {
-  color: #ff5e14;
+  color: #2e3138;
 }
 .footer-content .contact-widget p {
   color: #9ea0a9;
@@ -543,7 +547,7 @@ ul {
 }
 .footer-bottom .copyright a:hover,
 .footer-bottom .footer-nav li a:hover {
-  color: #ff5e14;
+  color: #2e3138;
 }
 .footer-bottom .footer-nav {
   position: relative;
@@ -1171,7 +1175,7 @@ ul {
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #047168;
+  color: #2c3e50;
   text-transform: uppercase;
   margin-bottom: 7px;
 }
@@ -1198,7 +1202,9 @@ ul {
   padding: 20px;
   margin-bottom: -12px;
 }
-
+.site-text{
+  color: #2c3e50;
+}
 .shape-container::before {
   content: "";
   position: absolute;
@@ -1212,14 +1218,20 @@ ul {
 }
 
 .shape_side_box:hover {
-  color: #fff;
-  background-color: #047168;
+  color: #fff !important;
+  background-color: #2c3e50;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+.shape_side_box:hover .arrow-btns{
+  color: #fff !important;
+  background-color: #2c3e50;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
 .shape_side_btn:hover {
   color: #fff;
-  background-color: #047168;
+  background-color: #2c3e50;
 }
 
 /* Checkbox Css */
@@ -1911,7 +1923,7 @@ a.btn-mod {
   cursor: pointer;
   overflow: visible; /* Allow wave to expand outside the button */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
-  top: 190px;
+  top: 150px;
 }
 
 /* Hover effect for the button */
@@ -1957,50 +1969,6 @@ a.btn-mod {
 }
 
 /* Page */
-
-.shape-one-clm {
-  width: 430px;
-  height: 430px;
-  text-align: center;
-  padding: 80px;
-  border-radius: 20px;
-  background: #1e2129;
-  color: white;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.features-sections {
-  margin-top: -216px;
-}
-.feature-bg {
-  background-color: #2c3e50;
-  height: 470px;
-}
-
-.second-feature-row {
-  margin-top: -190px;
-}
-
-.row-clm-two {
-  position: relative;
-  /* left: 5px; */
-  top: -15px;
-}
-.row-clm-thre {
-  position: relative;
-  left: 0px;
-  top: -15px;
-}
-.last-shape-ctn {
-  margin-top: -205px;
-  position: relative;
-  left: 0px;
-  top: -15px;
-}
-
 /* Portfolio Gallery */
 .p0 {
   padding: 0;
@@ -2012,12 +1980,12 @@ a.btn-mod {
 }
 .portfolio__filter .filter-button {
   display: inline-block;
-  padding: 10px 47px;
+  padding: 15px 45px;
   background: transparent;
   border: none;
   color: #9b9b9b;
   letter-spacing: 0;
-  font-size: 13px;
+  font-size: 18px;
   cursor: pointer;
   font-weight: 300;
 }
@@ -2033,15 +2001,20 @@ a.btn-mod {
   outline: 0;
 }
 .portfolio__filter {
-  display: inline-block;
-  text-align: center;
-  margin: 30px 0;
+  display: flex ;
+      text-align: center;
+      flex-direction: column;
 }
 .portfolio__img img {
   width: 100%;
-  height: 230px;
+  height: 480px;
   object-fit: cover;
-  padding: 3px 3px;
+  padding: 0px 8px;
+  /* border: 2px solid black; */
+  margin-right: 10px;
+}
+.hidden-section {
+  display: none; /* Ensure the section is hidden by default */
 }
 .btn__load {
   display: inline-block;
@@ -2237,4 +2210,8 @@ a.btn-mod {
 }
 .text-overlay h3 {
   font-size: 70px;
+}
+
+.blob-imgs{
+  margin-top: -305px;
 }
