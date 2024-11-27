@@ -132,10 +132,10 @@ $.fn.jQuerySimpleCounter = function (options) {
   );
 };
 
-$("#number1").jQuerySimpleCounter({ end: 12, duration: 3000 });
-$("#number2").jQuerySimpleCounter({ end: 55, duration: 3000 });
-$("#number3").jQuerySimpleCounter({ end: 359, duration: 2000 });
-$("#number4").jQuerySimpleCounter({ end: 246, duration: 2500 });
+$("#number1").jQuerySimpleCounter({ end: 112, duration: 3000 });
+$("#number2").jQuerySimpleCounter({ end: 155, duration: 3000 });
+$("#number3").jQuerySimpleCounter({ end: 112, duration: 2000 });
+$("#number4").jQuerySimpleCounter({ end: 16, duration: 2500 });
 
 /* AUTHOR LINK */
 $(".about-me-img").hover(
@@ -150,7 +150,6 @@ $(".about-me-img").hover(
       .removeClass("trans");
   }
 );
-
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -203,38 +202,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 $(document).ready(function () {
   $(".team-slider").slick({
-    slidesToShow: 4, // Number of team members visible at a time
-    slidesToScroll: 1, // Scroll one slide at a time
-    autoplay: true, // Enables autoplay
-    autoplaySpeed: 5000, // 5 seconds per slide
-    dots: true, // Adds navigation dots at the bottom
-    arrows: true, // Enables navigation arrows
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    arrows: true,
+    infinite: true, // Enables infinite looping
   });
 });
-
 const iframe = document.querySelector("iframe");
 iframe.onload = function () {
   const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
@@ -244,8 +220,6 @@ iframe.onload = function () {
   }
 };
 
-
-
 // 1. querySelector
 var containerEl = document.querySelector("ul.container");
 // 2. Passing the configuration object inline
@@ -254,22 +228,20 @@ var mixer = mixitup(containerEl, {
   animation: {
     effects: "fade translateZ(-100px)",
     effectsIn: "fade translateY(-100%)",
-    easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
-  }
+    easing: "cubic-bezier(0.645, 0.045, 0.355, 1)",
+  },
 });
 
 // fancybox insilaze & options //
 $("[data-fancybox]").fancybox({
   /* "TRICK" selector - group only visible items */
-  selector : '.mix:visible a',
+  selector: ".mix:visible a",
   loop: true,
   hash: true,
   transitionEffect: "slide",
   /* zoom VS next////////////////////
   clickContent - i modify the deafult - now when you click on the image you go to the next image - i more like this approach than zoom on desktop (This idea was in the classic/first lightbox) */
-  clickContent: function(current, event) {
+  clickContent: function (current, event) {
     return current.type === "image" ? "next" : false;
-  }
+  },
 });
-
-
