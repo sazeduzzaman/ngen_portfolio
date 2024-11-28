@@ -60,10 +60,10 @@ ul {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
-.navbar-blur .navbar-nav .nav-item .nav-link{
+.navbar-blur .navbar-nav .nav-item .nav-link {
   color: #fff;
 }
-.navbar-blur .navbar-nav .nav-item .nav-link.active{
+.navbar-blur .navbar-nav .nav-item .nav-link.active {
   font-weight: bolder;
   color: #fff;
 }
@@ -1931,6 +1931,66 @@ a.btn-mod {
   ); /* Gradient overlay */
   z-index: 1; /* Ensures it overlays the background but not the content */
 }
+.banner2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #5a0524e3,
+    #5a0524a1,
+    rgba(0, 0, 0, 0.288)
+  );
+  z-index: 1; /* Ensures it overlays the background but not the content */
+}
+.banner3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #F15A2D,
+    #f15b2d69,
+    rgba(0, 0, 0, 0.288)
+  );
+  z-index: 1; /* Ensures it overlays the background but not the content */
+}
+.banner4::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #0a1d5b,
+    #0a1d5bc4,
+    rgba(0, 0, 0, 0.288)
+  );
+  z-index: 1; /* Ensures it overlays the background but not the content */
+}
+.banner5::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #38b6ff,
+    #38b6ffbe,
+    rgba(0, 0, 0, 0.288)
+  );
+  z-index: 1; /* Ensures it overlays the background but not the content */
+}
 
 .banner .container {
   position: relative;
@@ -2348,4 +2408,44 @@ a.btn-mod {
   border-radius: 100%;
   text-align: center;
   line-height: 2;
+}
+
+.contact-section {
+  position: relative;
+  display: inline-block;
+}
+
+.contact-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0)
+  );
+  z-index: 1;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+.privacy-list {
+  list-style: inside;
 }
