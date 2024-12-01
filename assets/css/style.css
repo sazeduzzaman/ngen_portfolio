@@ -234,7 +234,7 @@ ul {
   font-weight: bold;
   font-family: "Space Grotesk", sans-serif;
   border-bottom: 6px solid #fff;
-  background: #ffffff70;
+  background: #ffffffc7;
 }
 .p-badge {
   background-color: #272b36;
@@ -1931,6 +1931,21 @@ a.btn-mod {
   ); /* Gradient overlay */
   z-index: 1; /* Ensures it overlays the background but not the content */
 }
+.banner0::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #EF3037,
+    #ef303685,
+    rgba(0, 0, 0, 0.288)
+  );
+  z-index: 1; /* Ensures it overlays the background but not the content */
+}
 .banner2::before {
   content: "";
   position: absolute;
@@ -1987,6 +2002,36 @@ a.btn-mod {
     to right,
     #38b6ff,
     #38b6ffbe,
+    rgba(0, 0, 0, 0.288)
+  );
+  z-index: 1; /* Ensures it overlays the background but not the content */
+}
+.banner6::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #E57C25,
+    #e57b2580,
+    rgba(0, 0, 0, 0.288)
+  );
+  z-index: 1; /* Ensures it overlays the background but not the content */
+}
+.banner7::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #227384,
+    #227484a2,
     rgba(0, 0, 0, 0.288)
   );
   z-index: 1; /* Ensures it overlays the background but not the content */
