@@ -161,8 +161,12 @@ ul {
 }
 
 .slider,
+.slide-home {
+  height: 1000px !important;
+}
+.slider,
 .slide {
-  height: 1000px;
+  height: auto;
 }
 
 .slide {
@@ -2494,4 +2498,27 @@ a.btn-mod {
 }
 .privacy-list {
   list-style: inside;
+}
+
+.projects-tabs{
+  justify-content: center;
+  border: 0;
+}
+.projects-tabs .nav-item .nav-link{
+  background-color: #eee;
+  margin-left: 5px;
+  border-radius: 0;
+  color: #252525;
+}
+.projects-tabs .nav-item .nav-link:hover{
+  background-color: #13151A;
+  margin-left: 5px;
+  border-radius: 0;
+  color: #fff;
+}
+.projects-tabs .nav-item .nav-link.active{
+  background-color: #13151A;
+  margin-left: 5px;
+  border-radius: 0;
+  color: white;
 }
