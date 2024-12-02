@@ -2417,7 +2417,8 @@ a.btn-mod {
 }
 
 .cta-banners {
-  background-image: url("./assets/images/cta-banner.jpg");
+  /* background-image: url("../assets/images/cta-banner.jpg"); */
+  background-image: url("../images/cta-banner.jpg");
   /* background-image: url("./images/cta-banner.jpg"); */
   background-size: cover; /* Ensure the background image covers the entire element */
   background-position: center; /* Position the image at the center */
@@ -2426,7 +2427,7 @@ a.btn-mod {
   height: 100%; /* Set a default height, can be adjusted */
 }
 .contact-box-section {
-  background-image: url("./assets/images/contact-section-banner2.png");
+  background-image: url("../images/contact-section-banner2.png");
   /* background-image: url("./images/contact-section-banner2.png"); */
   background-size: cover; /* Ensure the background image covers the entire element */
   background-position: center; /* Position the image at the center */
