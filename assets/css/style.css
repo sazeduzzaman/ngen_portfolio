@@ -51,6 +51,14 @@ ul {
   padding: 0;
   list-style: none;
 }
+.form-control {
+  height: 50px;
+  border-radius: 0;
+}
+.form-select {
+  height: 50px;
+  border-radius: 0;
+}
 /* Prelodaer End */
 .site-logo {
   width: 130px;
