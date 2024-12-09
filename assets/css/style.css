@@ -773,7 +773,7 @@ ul {
 }
 
 .agency_container {
-  margin-top: -100px;
+  margin-top: -185px;
   position: relative;
   z-index: 10;
 }
@@ -1952,7 +1952,7 @@ a.btn-mod {
   height: 100%;
   background: linear-gradient(
     to right,
-    #EF3037,
+    #ef3037,
     #ef303685,
     rgba(0, 0, 0, 0.288)
   );
@@ -1982,7 +1982,7 @@ a.btn-mod {
   height: 100%;
   background: linear-gradient(
     to right,
-    #F15A2D,
+    #f15a2d,
     #f15b2d69,
     rgba(0, 0, 0, 0.288)
   );
@@ -2027,7 +2027,7 @@ a.btn-mod {
   height: 100%;
   background: linear-gradient(
     to right,
-    #E57C25,
+    #e57c25,
     #e57b2580,
     rgba(0, 0, 0, 0.288)
   );
@@ -2198,6 +2198,52 @@ a.btn-mod {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+@media only screen and (max-width: 1200px) {
+  .slide__img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-75%);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+}
+.image-container {
+  position: relative;
+  overflow: hidden; /* Ensures the image stays within its container */
+  display: inline-block;
+}
+
+.zoom-effect {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom */
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Initial transparent overlay */
+  transition: background-color 0.3s ease-in-out; /* Smooth overlay fade */
+}
+
+.image-container:hover .zoom-effect {
+  transform: scale(1.2); /* Scales the image to 1.2 times its size */
+}
+
+.image-container:hover::after {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Add a semi-transparent black overlay */
+}
 @media only screen and (max-width: 600px) {
   .banner__slider {
     background-color: #091b27;
@@ -2508,25 +2554,102 @@ a.btn-mod {
   list-style: inside;
 }
 
-.projects-tabs{
+.projects-tabs {
   justify-content: center;
   border: 0;
 }
-.projects-tabs .nav-item .nav-link{
+.projects-tabs .nav-item .nav-link {
   background-color: #eee;
   margin-left: 5px;
   border-radius: 0;
   color: #252525;
 }
-.projects-tabs .nav-item .nav-link:hover{
-  background-color: #13151A;
+.projects-tabs .nav-item .nav-link:hover {
+  background-color: #13151a;
   margin-left: 5px;
   border-radius: 0;
   color: #fff;
 }
-.projects-tabs .nav-item .nav-link.active{
-  background-color: #13151A;
+.projects-tabs .nav-item .nav-link.active {
+  background-color: #13151a;
   margin-left: 5px;
   border-radius: 0;
   color: white;
+}
+.checkbox-wrapper-want-this input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.checkbox-wrapper-want-this .cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.checkbox-wrapper-want-this .cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-want-this .cbx span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid #9098a9;
+  transition: all 0.2s ease;
+}
+.checkbox-wrapper-want-this .cbx span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+.checkbox-wrapper-want-this .cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #506eec;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+.checkbox-wrapper-want-this .cbx span:last-child {
+  padding-left: 8px;
+}
+.checkbox-wrapper-want-this .cbx:hover span:first-child {
+  border-color: #506eec;
+}
+
+.checkbox-wrapper-want-this .inp-cbx:checked + .cbx span:first-child {
+  background: #506eec;
+  border-color: #506eec;
+  animation: wave-46 0.4s ease;
+}
+.checkbox-wrapper-want-this .inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+.checkbox-wrapper-want-this .inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave-46 {
+  50% {
+    transform: scale(0.9);
+  }
 }

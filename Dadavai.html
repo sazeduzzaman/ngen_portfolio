@@ -240,7 +240,7 @@
                             </h4>
                           </a>
                         </div>
-                         
+
                         <div class="col-lg-12">
                           <a href="TechFocus.html" class="">
                             <h4
@@ -728,13 +728,114 @@
                 <div class="col-lg-6">
                   <div class="text-end">
                     <a
-                      href="/contact.html"
-                      class="theme-btn btn-style-one mt-5"
+                      href="javascript:void(0)"
+                      class="explore-now-btn mt-5"
+                      style="border-bottom: 1px solid #fff"
+                      id="toggleFormBtn"
                       data-animation-in="fadeInUp"
                     >
-                      Contact Us
+                      I Want This Dadabhaai
                     </a>
                   </div>
+                  <!-- The Form -->
+                  <div id="formContainer" style="display: none">
+                    <form action="">
+                      <div class="row">
+                        <div class="col-lg-4"></div>
+                        <div class="col-lg-8">
+                          <div class="row">
+                            <div class="mb-3 col-lg-6">
+                              <label
+                                for="exampleFormControlInput1"
+                                class="form-label text-white"
+                                >Name</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="exampleFormControlInput1"
+                                placeholder="Jonson Hebit"
+                              />
+                            </div>
+                            <div class="mb-3 col-lg-6">
+                              <label
+                                for="exampleFormControlInput1"
+                                class="form-label text-white"
+                                >Email</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="exampleFormControlInput1"
+                                placeholder="Jonson@example.com"
+                              />
+                            </div>
+                            <div class="mb-3 col-lg-6">
+                              <label
+                                for="exampleFormControlInput1"
+                                class="form-label text-white"
+                                >Phone</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="exampleFormControlInput1"
+                                placeholder="+880 1585864658"
+                              />
+                            </div>
+                            <div class="mb-3 col-lg-6">
+                              <label
+                                for="exampleFormControlInput1"
+                                class="form-label text-white"
+                                >Your Message</label
+                              >
+                              <textarea
+                                class="form-control"
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                              ></textarea>
+                            </div>
+                            <div class="mb-3 pt-3 col-lg-12">
+                              <div class="checkbox-wrapper-want-this">
+                                <input
+                                  class="inp-cbx"
+                                  id="cbx-46"
+                                  type="checkbox"
+                                />
+                                <label class="cbx" for="cbx-46"
+                                  ><span>
+                                    <svg
+                                      width="12px"
+                                      height="10px"
+                                      viewbox="0 0 12 10"
+                                    >
+                                      <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                      ></polyline></svg></span
+                                  ><span class="text-white"
+                                    >I Want Complete
+                                    <strong style="text-decoration: underline"
+                                      >Dadabhaai</strong
+                                    >
+                                    Project Template.</span
+                                  >
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <button
+                                type="submit"
+                                class="btn-common-two w-100 mt-4"
+                              >
+                                Send This Request
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- End the form -->
                 </div>
               </div>
             </div>
@@ -947,6 +1048,19 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- End -->
     <script src="./assets/script/script.js"></script>
+    <script>
+      // JavaScript to toggle the form and button visibility
+      document
+        .getElementById("toggleFormBtn")
+        .addEventListener("click", function () {
+          const formContainer = document.getElementById("formContainer");
+          const toggleFormBtn = document.getElementById("toggleFormBtn");
+
+          // Show the form and hide the button
+          formContainer.style.display = "block";
+          toggleFormBtn.style.display = "none";
+        });
+    </script>
     <script>
       // 1. querySelector
       var containerEl = document.querySelector("ul.container");
