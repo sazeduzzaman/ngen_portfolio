@@ -95,26 +95,28 @@
     <div id="smooth-wrapper">
       <div id="smooth-content">
         <main>
-          <div class="login-box">
-            <section class="login-box-area">
-              <div class="container">
+          <div class="register-login-box">
+            <section class="register-login-box-area">
+              <div class="container mt-5">
                 <div class="card p-0 border-0">
                   <div class="card-body p-0">
                     <div class="row">
                       <div class="col-lg-6">
-                        <div class="login-bg py-5">
-                          <div class="login-side-content p-5">
+                        <div class="register-login-bg py-5">
+                          <div class="register-login-side-content p-5">
                             <!-- Welcome Message -->
                             <div class="pb-5">
-                              <h4 class="mb-0 text-white">Welcome Back</h4>
+                              <h4 class="mb-0 text-white">
+                                Welcome To Join Us!
+                              </h4>
                               <h1 class="fw-bold text-white">
-                                Login to Your Account!
+                                Register for a New Account!
                               </h1>
                             </div>
                             <p class="text-white">
-                              Access your dashboard, manage your projects, and
-                              stay up to date with the latest news. Please enter
-                              your credentials below to log in.
+                              Create an account to manage your projects, track
+                              your activities, and stay up to date with the
+                              latest updates.
                             </p>
 
                             <p class="text-white pt-4">
@@ -137,59 +139,122 @@
                           </div>
                         </div>
                       </div>
+
                       <div class="col-lg-6">
-                        <form class="p-5 py-5">
-                          <div>
-                            <h1>Sign In</h1>
+                        <form class="p-5">
+                          <div class="mb-5">
+                            <h2>Sign Up</h2>
                           </div>
-                          <div class="my-3 mt-5">
-                            <label for="exampleInputEmail1" class="form-label"
-                              >Email address</label
-                            >
-                            <input
-                              type="email"
-                              class="form-control"
-                              id="exampleInputEmail1"
-                              aria-describedby="emailHelp"
-                            />
-                          </div>
-                          <div class="">
-                            <label for="exampleInputEmail1" class="form-label"
-                              >Password</label
-                            >
-                            <div class="input-group mb-2">
-                              <input
-                                type="password"
-                                class="form-control"
-                                id="passwordInput"
-                                placeholder="Enter your password"
-                                aria-label="Password"
-                                aria-describedby="button-addon1"
-                              />
-                              <button
-                                class="btn btn-outline-danger rounded-0"
-                                type="button"
-                                id="button-addon1"
-                                onclick="togglePasswordVisibility()"
-                              >
-                                <i class="fa-solid fa-lock"></i>
-                              </button>
+                          <!-- Full Name -->
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="mb-3">
+                                <label for="fullName" class="form-label"
+                                  >Full Name</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="fullName"
+                                  placeholder="Enter your full name"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <!-- Email Address -->
+                              <div class="mb-3">
+                                <label for="email" class="form-label"
+                                  >Email address</label
+                                >
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="email"
+                                  placeholder="Enter your email address"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <!-- Phone Number -->
+                              <div class="mb-3">
+                                <label for="phone" class="form-label"
+                                  >Phone Number</label
+                                >
+                                <input
+                                  type="tel"
+                                  class="form-control"
+                                  id="phone"
+                                  placeholder="Enter your phone number"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <!-- Password -->
+                              <div class="mb-3">
+                                <label for="password" class="form-label"
+                                  >Password</label
+                                >
+                                <div class="input-group">
+                                  <input
+                                    type="password"
+                                    class="form-control"
+                                    id="password"
+                                    placeholder="Enter your password"
+                                    aria-label="Password"
+                                    required
+                                  />
+                                  <button
+                                    class="btn btn-outline-danger rounded-0"
+                                    type="button"
+                                    id="button-addon1"
+                                    onclick="togglePasswordVisibility('password', 'button-addon1')"
+                                  >
+                                    <i class="fa-solid fa-lock"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                              <!-- Confirm Password -->
+                              <div class="mb-3">
+                                <label for="confirmPassword" class="form-label"
+                                  >Confirm Password</label
+                                >
+                                <div class="input-group">
+                                  <input
+                                    type="password"
+                                    class="form-control"
+                                    id="confirmPassword"
+                                    placeholder="Confirm your password"
+                                    required
+                                  />
+                                  <button
+                                    class="btn btn-outline-danger rounded-0"
+                                    type="button"
+                                    id="button-addon2"
+                                    onclick="togglePasswordVisibility('confirmPassword', 'button-addon2')"
+                                  >
+                                    <i class="fa-solid fa-lock"></i>
+                                  </button>
+                                </div>
+                              </div>
                             </div>
                           </div>
+
+                          <!-- Terms & Privacy -->
                           <div class="form-check ps-0 mt-4">
-                            <div class="palatform_checkbox">
+                            <div class="register-checkbox">
                               <input
-                                class="platform_input"
-                                id="platform_label-106"
+                                class="inp-cbx"
+                                id="cbx-465"
                                 type="checkbox"
-                                value="Graphics Design"
-                                onclick="handleCheckboxClick()"
                               />
-                              <label
-                                class="platform_label"
-                                for="platform_label-106"
-                              >
-                                <span>
+                              <label class="cbx" for="cbx-465"
+                                ><span>
                                   <svg
                                     width="12px"
                                     height="10px"
@@ -197,36 +262,8 @@
                                   >
                                     <polyline
                                       points="1.5 6 4.5 9 10.5 1"
-                                    ></polyline>
-                                  </svg>
-                                </span>
-                                <span> Remember Me! With This Account. </span>
-                              </label>
-                            </div>
-                            <div class="palatform_checkbox mb-2">
-                              <input
-                                class="platform_input"
-                                id="platform_label-103"
-                                type="checkbox"
-                                value="Graphics Design"
-                                onclick="handleCheckboxClick()"
-                              />
-                              <label
-                                class="platform_label"
-                                for="platform_label-103"
-                              >
-                                <span>
-                                  <svg
-                                    width="12px"
-                                    height="10px"
-                                    viewbox="0 0 12 10"
-                                  >
-                                    <polyline
-                                      points="1.5 6 4.5 9 10.5 1"
-                                    ></polyline>
-                                  </svg>
-                                </span>
-                                <span>
+                                    ></polyline></svg></span
+                                ><span>
                                   Yes, I accept the
                                   <a
                                     href="/terms-of-service"
@@ -245,24 +282,20 @@
                               </label>
                             </div>
                           </div>
+                          <!-- Submit Button -->
                           <button
                             type="submit"
                             class="btn-common-three animated mt-4 w-100"
                           >
-                            Submit
+                            Register Now
                           </button>
+
                           <!-- Sign Up Link -->
                           <div class="mt-4 text-center">
                             <p class="text-muted mb-0">
-                              Don’t have an account?
-                              <a href="/register" class="text-primary"
-                                >Sign Up Now</a
-                              >
-                            </p>
-                            <p class="text-muted mb-0">
-                              Forgot Your
-                              <a href="/register" class="text-primary"
-                                >Password?</a
+                              Already have an account?
+                              <a href="login.html" class="text-primary"
+                                >Login Now</a
                               >
                             </p>
                           </div>
@@ -377,14 +410,15 @@
     <!-- End -->
     <script src="./assets/script/script.js"></script>
     <script>
-      function togglePasswordVisibility() {
-        var passwordInput = document.getElementById("passwordInput");
-        var button = document.getElementById("button-addon1");
+      function togglePasswordVisibility(inputId, buttonId) {
+        var passwordInput = document.getElementById(inputId); // Get the correct input based on ID
+        var button = document.getElementById(buttonId); // Get the correct button based on ID
 
-        // Toggle password visibility
+        // Toggle password visibility for the selected input field
         if (passwordInput.type === "password") {
           passwordInput.type = "text";
-          button.innerHTML = '<i class="fa-solid fa-eye-slash text-success"></i>'; // Change icon to "eye-slash"
+          button.innerHTML =
+            '<i class="fa-solid fa-eye-slash text-success"></i>'; // Change icon to "eye-slash"
         } else {
           passwordInput.type = "password";
           button.innerHTML = '<i class="fa-solid fa-lock"></i>'; // Revert icon to "lock"

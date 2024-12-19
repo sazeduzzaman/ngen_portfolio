@@ -2654,6 +2654,240 @@ a.btn-mod {
   }
 }
 .login-box {
-  background-color: #000000;
+  background-image: linear-gradient(
+    to right top,
+    #13151a,
+    #15171d,
+    #171a1f,
+    #191c22,
+    #1b1e25,
+    #1f2228,
+    #23252c,
+    #27292f,
+    #2e2f34,
+    #353538,
+    #3c3b3d,
+    #424242
+  );
+}
+
+.form-box {
+  width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.login-bg {
+  position: relative;
+  background-image: url("https://blog.bio-key.com/hubfs/man%20login%20.jpeg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add overlay */
+.login-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+  background-image: linear-gradient(
+    to right top,
+    #13151a,
+    #15171d,
+    #171a1f,
+    #191c22,
+    #1b1e25,
+    #1f2228,
+    #23252c,
+    #27292f,
+    #2e2f34,
+    #353538,
+    #3c3b3d,
+    #424242
+  ); /* Black overlay with 50% opacity */
+  z-index: 1; /* Makes sure the overlay appears above the background but below the content */
+}
+.login-side-content {
+  position: absolute;
+  z-index: 5;
+}
+.container {
+  position: relative;
+  z-index: 2; /* Ensures the content is above the overlay */
+}
+.login-box-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Register */
+.register-login-box {
+  background-image: linear-gradient(
+    to right top,
+    #13151a,
+    #15171d,
+    #171a1f,
+    #191c22,
+    #1b1e25,
+    #1f2228,
+    #23252c,
+    #27292f,
+    #2e2f34,
+    #353538,
+    #3c3b3d,
+    #424242
+  );
+}
+
+.register-form-box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.register-login-bg {
+  position: relative;
+  background-image: url("https://blog.bio-key.com/hubfs/man%20login%20.jpeg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add overlay */
+.register-login-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+  background-image: linear-gradient(
+    to right top,
+    #13151a,
+    #15171d,
+    #171a1f,
+    #191c22,
+    #1b1e25,
+    #1f2228,
+    #23252c,
+    #27292f,
+    #2e2f34,
+    #353538,
+    #3c3b3d,
+    #424242
+  ); /* Black overlay with 50% opacity */
+  z-index: 1; /* Makes sure the overlay appears above the background but below the content */
+}
+.register-login-side-content {
+  position: absolute;
+  z-index: 5;
+}
+.container {
+  position: relative;
+  z-index: 2; /* Ensures the content is above the overlay */
+}
+.register-login-box-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.register-checkbox input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.register-checkbox .cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.register-checkbox .cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+.register-checkbox .cbx span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid #9098a9;
+  transition: all 0.2s ease;
+}
+.register-checkbox .cbx span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+.register-checkbox .cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #506eec;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+.register-checkbox .cbx span:last-child {
+  padding-left: 8px;
+}
+.register-checkbox .cbx:hover span:first-child {
+  border-color: #506eec;
+}
+
+.register-checkbox .inp-cbx:checked + .cbx span:first-child {
+  background: #506eec;
+  border-color: #506eec;
+  animation: wave-46 0.4s ease;
+}
+.register-checkbox .inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+.register-checkbox .inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave-46 {
+  50% {
+    transform: scale(0.9);
+  }
 }
