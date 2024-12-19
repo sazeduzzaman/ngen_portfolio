@@ -556,7 +556,7 @@ ul {
   color: #9ea0a9;
 }
 .footer-content .service-widget .list li a:hover {
-  color: #2e3138;
+  color: #ffffff;
 }
 .footer-content .contact-widget p {
   color: #9ea0a9;
@@ -584,7 +584,7 @@ ul {
 }
 .footer-bottom .copyright a:hover,
 .footer-bottom .footer-nav li a:hover {
-  color: #2e3138;
+  color: #ffff;
 }
 .footer-bottom .footer-nav {
   position: relative;
@@ -2652,4 +2652,8 @@ a.btn-mod {
   50% {
     transform: scale(0.9);
   }
+}
+.login-box {
+  background-color: #000000;
+  height: 100vh;
 }
