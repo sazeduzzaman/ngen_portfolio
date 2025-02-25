@@ -2244,6 +2244,25 @@ a.btn-mod {
     0.5
   ); /* Add a semi-transparent black overlay */
 }
+@media only screen and (min-width: 1200px) {
+  .slide__img {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .slide__content.slide__content__left {
+    left: 15%;
+    transform: translate(-15%, -70%);
+  }
+  .slide__content.slide__content__right {
+    left: 15%;
+    transform: translate(10%, -70%);
+  }
+}
 @media only screen and (max-width: 600px) {
   .banner__slider {
     background-color: #091b27;
@@ -2891,6 +2910,7 @@ a.btn-mod {
     transform: scale(0.9);
   }
 }
+
 .btn-container-p {
   display: flex;
   justify-content: flex-end; /* Push buttons to the right */
@@ -3057,21 +3077,20 @@ a.btn-mod {
 
 .p-slider,
 .element {
-  background: rgb(255 255 255 / 0%); 
-  backdrop-filter: blur(12px); 
-  -webkit-backdrop-filter: blur(12px); 
-  border: 1px solid rgba(255, 255, 255, 0.2); 
-  border-radius: 12px; 
+  background: rgb(255 255 255 / 0%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
   /* padding: 20px;  */
   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  */
   /* transition: all 0.3s ease-in-out;  */
 }
 
-
 .p-slider:hover,
 .element:hover {
   /* background: rgba(255, 255, 255, 0.25);  */
-  backdrop-filter: blur(18px); 
+  backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  transform: translateY(0px); 
+  transform: translateY(0px);
 }
